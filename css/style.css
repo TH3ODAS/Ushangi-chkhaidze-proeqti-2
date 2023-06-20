@@ -1,0 +1,75 @@
+body{
+  background-image:url("../images/166597.jpg");
+  z-index: 1;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+h2{
+  color: orange;
+  font-size: 0px;
+  z-index: 2;
+  margin: 0 auto;
+  top: 200px;
+  left: 815px;
+  position: absolute;
+  animation: mymove 5s 1;
+}
+.scorpion{
+  height: 150px;
+  width: 85px;
+  position: absolute;
+  top: 750px;
+  left: 444px;
+  animation: jump 2s infinite;
+  animation-timing-function: step-start;
+}
+.subzero{
+  height: 150px;
+  width: 85px;
+  position: absolute;
+  top: 750px;
+  right: 444px;
+  animation: jump 2s ease infinite;
+  animation-timing-function: step-start;
+}
+.healthbar{
+  height: 40px;
+  width: 150px;
+  top: 20px;
+  left: 60px;
+  position: absolute;
+
+
+}
+.healthbar1{
+  height: 40px;
+  width: 150px;
+  top: 20px;
+  right: 60px;
+  position: absolute;
+
+}
+@keyframes mymove {
+  0%   {top: 0px; font-size: 100px;  width: 100px;}
+  100% {top: 200px; font-size: 100px;  width: 300px;}
+}
+@keyframes jump{
+  0% {top: 750px,}
+  50% {top: 700px}
+  100% {top: 680px}
+}
+.menu{
+  display: inline-block;
+  position: absolute;
+}
+h3{
+  font-size: 25px;
+  color: orange;
+  left: 900px;
+  position: absolute;
+}
+h3:hover{
+  background-size: 25px;
+  background-color: black;
+
+}
